@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe Game</title>
+
+        <!-- FOR GOOGLE FONTS AND CSS -->
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Poppins:wght@800&display=swap" rel="stylesheet">
+        
+        <!-- FOR META LINKS -->
+        <meta charset="UTF-8" />  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    </head>
+
+    <body onload="startGame()">
+
+        <h1 id="heading">Tic Tac Toe Game</h1><br/>
+        <div id="call" class="text1">Result</div>
+        
+        <table class="shift">
+            <tr>
+                <td id="s1" class="rows" onclick="nextMove(this);"></td>
+                <td id="s2" class="rows" onclick="nextMove(this);"></td>
+                <td id="s3" class="rows" onclick="nextMove(this);"></td>
+            </tr>
+
+            <tr>
+                <td id="s4" class="rows" onclick="nextMove(this);"></td>
+                <td id="s5" class="rows" onclick="nextMove(this);"></td>
+                <td id="s6" class="rows" onclick="nextMove(this);"></td>
+            </tr>
+
+            <tr>
+                <td id="s7" class="rows" onclick="nextMove(this);"></td>
+                <td id="s8" class="rows" onclick="nextMove(this);"></td>
+                <td id="s9" class="rows" onclick="nextMove(this);"></td>
+            </tr>
+        </table>
+        <button type="button" onclick="startGame()" class="but">Start New Game</button>
+        <script src="index.js"></script>
+    </body>
+</html>
